@@ -4,4 +4,4 @@
   = @todos.each do |todo|
     %li{class: ('completed' if todo.completed?)}
       = todo.title
-      = button_to 'Mark complete', todo_completion_path(todo)
+      = todo_action_button(todo)
